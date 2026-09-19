@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+  
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* ECG Paper Grid Simulation */
+.ecg-grid {
+  background-color: #0f172a;
+  background-image: 
+    linear-gradient(rgba(244, 63, 94, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(244, 63, 94, 0.08) 1px, transparent 1px),
+    linear-gradient(rgba(244, 63, 94, 0.22) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(244, 63, 94, 0.22) 1px, transparent 1px);
+  background-size: 8px 8px, 8px 8px, 40px 40px, 40px 40px;
+}
+
+.ecg-grid-light {
+  background-color: #fffaf9;
+  background-image: 
+    linear-gradient(rgba(239, 68, 68, 0.12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(239, 68, 68, 0.12) 1px, transparent 1px),
+    linear-gradient(rgba(239, 68, 68, 0.3) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(239, 68, 68, 0.3) 1px, transparent 1px);
+  background-size: 10px 10px, 10px 10px, 50px 50px, 50px 50px;
+}
+
+/* Custom scrollbar for clinical panels */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.6);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(71, 85, 105, 0.6);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.9);
+}
