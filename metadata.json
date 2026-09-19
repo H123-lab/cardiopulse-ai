@@ -1,0 +1,6 @@
+{
+  "name": "CardioPulse AI - Cardiology Copilot & Innovation Platform",
+  "description": "Advanced AI-powered cardiology clinical copilot and research platform for cardiologists, physicians, and medical students featuring 2D vector TTE echocardiogram simulation with dynamic wall motion abnormalities, ECG interpretation, guideline-directed therapy (GDMT), and cardiovascular research innovation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
